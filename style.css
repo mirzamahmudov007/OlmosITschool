@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 .navbar {
   width: 80%;
   margin: 30px auto;
@@ -268,8 +270,106 @@
     font-size: 12px;
   }
 }
+.frontend .container {
+  width: 80%;
+  margin: auto;
+}
+.frontend__title {
+  margin-bottom: 20px;
+  font-family: Goldman;
+  text-align: center;
+  font-size: 30px;
+}
+.frontend__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.frontend__list__item {
+  width: 30%;
+  background-color: black;
+  color: black;
+  list-style: none;
+  padding: 30px 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 1px 1px 10px 2px black;
+}
+.frontend__list__item__title {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: Goldman;
+}
+.frontend__list__item__text {
+  font-size: 16px;
+  margin-top: 5px;
+  font-family: Goldman;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .frontend__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .frontend__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .frontend__list__item {
+    width: 32%;
+    padding: 20px 10px;
+  }
+  .frontend__list__item img {
+    width: 50px;
+  }
+  .frontend__list__item__title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .frontend__list__item__text {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .frontend__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .frontend__list {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .frontend__list__item {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .frontend__list__item img {
+    width: 80px;
+  }
+  .frontend__list__item__title {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .frontend__list__item__text {
+    font-size: 15px;
+    margin-top: 3px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.header {
+  padding-top: 1px;
+  margin-bottom: 80px;
+}
+
+.header:hover .navbar__menu__link:nth-child(1) {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

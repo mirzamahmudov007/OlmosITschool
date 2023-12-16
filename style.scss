@@ -1,7 +1,16 @@
 @use "nav";
 @use "main";
+@use "frontend";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.header{
+  padding-top: 1px;
+  margin-bottom: 80px;
+}
+.header:hover .navbar__menu__link:nth-child(1){
+text-decoration: underline;
 }
