@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-}
-
 .navbar {
   width: 80%;
   margin: 30px auto;
@@ -27,12 +17,14 @@ body {
 .navbar__logo {
   color: black;
   font-size: 1.5em;
-  font-family: Rubik Bubbles;
+  display: flex;
+  align-items: center;
+  font-family: Goldman;
 }
 .navbar__menu {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
 }
 .navbar__menu__link {
   text-decoration: none;
@@ -47,7 +39,7 @@ body {
 .navbar__menu__dropdown {
   position: absolute;
   width: 150px;
-  height: 25vh;
+  height: 160px;
   background-color: black;
   top: 60px;
   right: 0px;
@@ -82,4 +74,9 @@ body {
   .navbar__menu__icon:hover .navbar__menu__dropdown {
     display: block;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
