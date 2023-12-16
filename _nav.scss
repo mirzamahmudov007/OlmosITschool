@@ -38,6 +38,9 @@
       &__icon {
         position: relative;
         display: none;
+        &__exit{
+            display: none;
+        }
       }
   
       &__dropdown {
@@ -89,5 +92,45 @@
   //Phone
   
   @media only screen and (max-width: 320px) {
+    .navbar {
+        padding: 10px 30px;
+        width: 90%;
+        &__logo{
+           img{
+            width: 30px;
+           }
+           h1{
+            font-size: 30px;
+           }
+           
+        }
+        &__menu {
+          &__link {
+            display: none;
+          }
+          &__icon {
+            display: block;
+            img{
+                width: 30px;
+            }
+            
+          }
+          &__dropdown{
+            width: 110px;
+            height: 120px;
+            &__list{
+                &__item{
+                    padding: 5px 0px 5px 10px;
+                    &__link{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+          &__icon:hover &__dropdown {
+            display: block;
+          }
+        }
+      }
   }
   
