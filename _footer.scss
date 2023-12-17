@@ -41,93 +41,87 @@
   }
 }
 
-
-@media only screen and (max-width:751px){
-  
-.footer {
-  height: 100px;
-  &__logo {
-    font-size: 16px;
-    border-right: 2px solid white;
-    padding-right: 20px;
-    img{
-      width: 30px;
-    }
-  }
-  &__list {
-    width: 100%;
-    &__item {
-      &__icons {
-        gap: 10px;
-        &__instagram{
-          width: 30px;
-        }
-        &__youtube{
-          width: 30px;
-        }
-        &__telegram{
-          width: 30px;
-        }
+@media only screen and (max-width: 751px) {
+  .footer {
+    height: 100px;
+    &__logo {
+      border-right: 2px solid white;
+      padding-right: 20px;
+      img {
+        width: 30px;
       }
-      p {
-        font-family: Goldman;
-        font-size: 14px;
+    }
+    &__list {
+      width: 100%;
+      &__item {
+        &__icons {
+          gap: 10px;
+          &__instagram {
+            width: 30px;
+          }
+          &__youtube {
+            width: 30px;
+          }
+          &__telegram {
+            width: 30px;
+          }
+        }
+        p {
+          font-family: Goldman;
+          font-size: 14px;
+        }
       }
     }
   }
 }
-}
 
 
-
-@media only screen and (max-width:590px){
-  
-.footer {
-  height: 100px;
-  &__logo {
-    font-size: 14px;
-    border-right: 1.4px solid white;
-    padding-right: 15px;
-    img{
-      width: 25px;
-    }
-  }
-  &__list {
-    width: 100%;
-    &__item {
-      &__icons {
-        gap: 5px;
-        &__instagram{
-          width: 25px;
-        }
-        &__youtube{
-          width: 25px;
-        }
-        &__telegram{
-          width: 25px;
-        }
+@media only screen and (max-width: 420px) {
+  .footer {
+    height: 100px;
+    &__logo {
+      border-right: 2px solid white;
+      padding-right: 20px;
+      h1 span  img {
+        width: 40px;
       }
-      p {
-        font-family: Goldman;
-        font-size: 12px;
+      h1 {
+        font-size: 40px;
       }
     }
+    &__list {
+      width: 100%;
+      &__item {
+        &__icons {
+          gap: 10px;
+          &__instagram {
+            width: 40px;
+          }
+          &__youtube {
+            width: 40px;
+          }
+          &__telegram {
+            width: 40px;
+          }
+        }
+        p {
+          font-family: Goldman;
+          font-size: 14px;
+          display: none;
+        }
+      }
+    }
   }
 }
-}
 
-
-
-
-@media only screen and (max-width:402px){
-  
+@media only screen and (max-width: 590px) {
   .footer {
     height: 100px;
     &__logo {
       font-size: 14px;
       border-right: 1.4px solid white;
       padding-right: 15px;
-      img{
+      img {
         width: 25px;
       }
     }
@@ -136,24 +130,23 @@
       &__item {
         &__icons {
           gap: 5px;
-          &__instagram{
+          &__instagram {
             width: 25px;
           }
-          &__youtube{
+          &__youtube {
             width: 25px;
           }
-          &__telegram{
+          &__telegram {
             width: 25px;
           }
         }
         p {
-          display: none;
+          font-family: Goldman;
+          font-size: 12px;
         }
-
-        
       }
     }
   }
-  }
-  
-  
+}
+
+
