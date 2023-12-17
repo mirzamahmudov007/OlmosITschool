@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 .navbar {
   width: 80%;
   margin: 30px auto;
@@ -32,7 +36,7 @@
 }
 .navbar__menu__link {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.1em;
   color: black;
   font-family: "Goldman", sans-serif;
 }
@@ -368,6 +372,240 @@
   .frontend__list__item__text {
     font-size: 15px;
     margin-top: 3px;
+  }
+}
+.backend {
+  margin-top: 100px;
+}
+.backend .container {
+  width: 80%;
+  margin: auto;
+}
+.backend__title {
+  margin-bottom: 20px;
+  font-family: Goldman;
+  text-align: center;
+  font-size: 30px;
+}
+.backend__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.backend__list__item {
+  text-decoration: none;
+  position: relative;
+  width: 30%;
+  background-color: black;
+  color: black;
+  list-style: none;
+  padding: 30px 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 1px 1px 10px 2px black;
+}
+.backend__list__item__title {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: Goldman;
+}
+.backend__list__item__text {
+  font-size: 16px;
+  margin-top: 5px;
+  font-family: Goldman;
+}
+.backend__list__item:hover .backend__list__item__title {
+  opacity: 0.4;
+}
+.backend__list__item:hover .backend__list__item__text {
+  opacity: 0.4;
+}
+.backend__list__item:hover img {
+  opacity: 0.4;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .backend__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .backend__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .backend__list__item {
+    width: 32%;
+    padding: 20px 10px;
+  }
+  .backend__list__item img {
+    width: 50px;
+  }
+  .backend__list__item__title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .backend__list__item__text {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .backend__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .backend__list {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .backend__list__item {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .backend__list__item img {
+    width: 80px;
+  }
+  .backend__list__item__title {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .backend__list__item__text {
+    font-size: 15px;
+    margin-top: 3px;
+  }
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(27, 26, 26);
+}
+.footer .container {
+  padding: 15px 0px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.footer__logo {
+  border-right: 2px solid white;
+  padding-right: 40px;
+}
+.footer__list {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.footer__list__item__icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list__item p {
+  font-family: Goldman;
+}
+
+@media only screen and (max-width: 751px) {
+  .footer {
+    height: 100px;
+  }
+  .footer__logo {
+    font-size: 16px;
+    border-right: 2px solid white;
+    padding-right: 20px;
+  }
+  .footer__logo img {
+    width: 30px;
+  }
+  .footer__list {
+    width: 100%;
+  }
+  .footer__list__item__icons {
+    gap: 10px;
+  }
+  .footer__list__item__icons__instagram {
+    width: 30px;
+  }
+  .footer__list__item__icons__youtube {
+    width: 30px;
+  }
+  .footer__list__item__icons__telegram {
+    width: 30px;
+  }
+  .footer__list__item p {
+    font-family: Goldman;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .footer {
+    height: 100px;
+  }
+  .footer__logo {
+    font-size: 14px;
+    border-right: 1.4px solid white;
+    padding-right: 15px;
+  }
+  .footer__logo img {
+    width: 25px;
+  }
+  .footer__list {
+    width: 100%;
+  }
+  .footer__list__item__icons {
+    gap: 5px;
+  }
+  .footer__list__item__icons__instagram {
+    width: 25px;
+  }
+  .footer__list__item__icons__youtube {
+    width: 25px;
+  }
+  .footer__list__item__icons__telegram {
+    width: 25px;
+  }
+  .footer__list__item p {
+    font-family: Goldman;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 402px) {
+  .footer {
+    height: 100px;
+  }
+  .footer__logo {
+    font-size: 14px;
+    border-right: 1.4px solid white;
+    padding-right: 15px;
+  }
+  .footer__logo img {
+    width: 25px;
+  }
+  .footer__list {
+    width: 100%;
+  }
+  .footer__list__item__icons {
+    gap: 5px;
+  }
+  .footer__list__item__icons__instagram {
+    width: 25px;
+  }
+  .footer__list__item__icons__youtube {
+    width: 25px;
+  }
+  .footer__list__item__icons__telegram {
+    width: 25px;
+  }
+  .footer__list__item p {
+    display: none;
   }
 }
 * {
