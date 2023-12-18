@@ -71,6 +71,16 @@
     }
   }
   
+  @media only screen and (min-width:769px) and (max-width:900px){
+    .navbar{
+      &__menu{
+        gap: 25px;
+        &__link{
+          // font-size: 18px;
+        }
+      }
+    }
+  }
   // tablet
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     .navbar {
@@ -88,6 +98,8 @@
           display: block;
         }
         &__icon:hover &__dropdown {
+          z-index: 1;
+          opacity: 0.9;
           display: block;
         }
       }
@@ -133,6 +145,8 @@
             }
         }
           &__icon:hover &__dropdown {
+            opacity: 0.9;
+            z-index: 1;
             display: block;
           }
         }

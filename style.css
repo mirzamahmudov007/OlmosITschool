@@ -72,6 +72,11 @@
   font-size: 1em;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+  .navbar__menu {
+    gap: 25px;
+  }
+}
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .navbar {
     padding: 10px 30px;
@@ -86,6 +91,8 @@
     display: block;
   }
   .navbar__menu__icon:hover .navbar__menu__dropdown {
+    z-index: 1;
+    opacity: 0.9;
     display: block;
   }
 }
@@ -120,6 +127,8 @@
     font-size: 13px;
   }
   .navbar__menu__icon:hover .navbar__menu__dropdown {
+    opacity: 0.9;
+    z-index: 1;
     display: block;
   }
 }
@@ -624,6 +633,14 @@ h1 {
     font-size: 12px;
   }
 }
+.backend__web .navbar__menu__dropdown {
+  height: 80px;
+}
+.backend__web .header .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
