@@ -650,6 +650,7 @@ h1 {
 .header {
   padding-top: 1px;
   margin-bottom: 80px;
+  height: 100vh;
 }
 
 .header:hover .navbar__menu__link:nth-child(1) {
