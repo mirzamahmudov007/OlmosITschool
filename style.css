@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 .navbar {
-  width: 80%;
+  width: 90%;
   margin: 30px auto;
   padding: 15px 30px;
   background-color: white;
@@ -133,7 +133,7 @@
   }
 }
 .main .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .main__list {
@@ -287,7 +287,7 @@
   }
 }
 .frontend .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .frontend__title {
@@ -390,7 +390,7 @@
   margin-top: 100px;
 }
 .backend .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .backend__title {
@@ -636,7 +636,7 @@ h1 {
 .backend__web .navbar__menu__dropdown {
   height: 80px;
 }
-.backend__web .header .container {
+.backend__web__header .container {
   width: 80%;
   margin: 0 auto;
 }
@@ -650,7 +650,6 @@ h1 {
 .header {
   padding-top: 1px;
   margin-bottom: 80px;
-  height: 100vh;
 }
 
 .header:hover .navbar__menu__link:nth-child(1) {

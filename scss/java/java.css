@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.java .navbar {
+  width: 100%;
+  margin: 30px auto;
+  border: none;
+  box-shadow: none;
+  background-color: #ffffff;
+  border-radius: 55px;
+}
+.java .navbar .container {
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.java .navbar__logo {
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px 3px black;
+  background-color: white;
+  border-radius: 55px;
+  padding: 0px 30px;
+  color: black;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  font-family: Goldman;
+}
+.java .navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.java .navbar__menu__link {
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px 3px black;
+  background-color: white;
+  border-radius: 55px;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+  font-family: "Goldman", sans-serif;
+}
+.java .navbar__menu__icon {
+  display: none;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .navbar__logo h1 {
+    width: 80px;
+    font-size: 30px;
+  }
+  .navbar__logo h1 img {
+    width: 35px;
+  }
+  .navbar__menu {
+    font-size: 14px;
+  }
+  .navbar__menu__link {
+    width: 100px;
+  }
+  .navbar__menu__icon {
+    display: none;
+  }
+}/*# sourceMappingURL=java.css.map */
