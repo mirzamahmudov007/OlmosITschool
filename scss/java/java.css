@@ -145,6 +145,7 @@ html, body {
 
 .navbar {
   position: fixed;
+  top: 0;
   z-index: 1;
 }
 
@@ -152,7 +153,24 @@ html, body {
   position: fixed;
 }
 
+.dropdownx {
+  width: 100%;
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
+  .dropdownx {
+    z-index: 100;
+    position: fixed;
+    display: block;
+  }
+  .aside_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #222;
+  }
   .navbar {
     z-index: 1000;
   }
@@ -163,5 +181,63 @@ html, body {
   }
   #bdSidebar {
     z-index: 100;
+    width: 100%;
   }
+}
+.dropdown {
+  position: relative;
+  top: 62px;
+  width: 100%;
+  z-index: 100;
+  height: 20px;
+  filter: url(#goo);
+}
+.dropdown__face, .dropdown__items {
+  background-color: #fff;
+  padding: 20px;
+}
+.dropdown__face {
+  display: block;
+  position: relative;
+}
+.dropdown__items {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 100%;
+  list-style: none;
+  list-style-type: none;
+  display: block;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+}
+.dropdown__items::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  bottom: 100%;
+  right: 20%;
+  height: 40px;
+  width: 20px;
+}
+.dropdown__arrow {
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 10px;
+  height: 10px;
+  transform-origin: right;
+}
+.dropdown input {
+  display: none;
+}
+.dropdown input:checked ~ .dropdown__items {
+  top: calc(100% + 25px);
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=java.css.map */
