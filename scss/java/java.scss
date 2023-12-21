@@ -159,4 +159,40 @@
   
   
 
+  #bdSidebar{
+    margin-top: 60px;
+  } 
+  
+
+  .flex-fill{
+    margin-top: 50px;
+  }
+  .navbar{
+    position: fixed;
+    z-index: 1;
+  }
+
+  #theme{
+    position: fixed;
+  }
+
+
+
+  @media only screen and (max-width:767px) {
+   .navbar{
+    z-index: 1000;
+   }
+    .flex-fill{
+      margin-left: 0px;
+      margin-top: 65px;
+      z-index: 1;
+    }
+    #theme{
+
+    }
+    #bdSidebar{
+      z-index: 100;
+    } 
+
+  }
   
