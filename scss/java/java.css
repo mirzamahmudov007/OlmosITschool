@@ -3,67 +3,45 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .java .navbar {
   width: 100%;
   margin: 30px auto;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: #ffffff;
   border-radius: 55px;
 }
-
 .java .navbar .container {
   width: 90%;
   margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-content: space-between;
 }
-
 .java .navbar__logo {
   border: 1px solid black;
-  -webkit-box-shadow: 0px 0px 5px 3px black;
-          box-shadow: 0px 0px 5px 3px black;
+  box-shadow: 0px 0px 5px 3px black;
   background-color: white;
   border-radius: 55px;
   padding: 0px 30px;
   color: black;
   font-size: 1.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: Goldman;
 }
-
 .java .navbar__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 3em;
 }
-
 .java .navbar__menu__link {
   border: 1px solid black;
-  -webkit-box-shadow: 0px 0px 5px 3px black;
-          box-shadow: 0px 0px 5px 3px black;
+  box-shadow: 0px 0px 5px 3px black;
   background-color: white;
   border-radius: 55px;
   padding: 15px 30px;
@@ -72,7 +50,6 @@
   color: black;
   font-family: "Goldman", sans-serif;
 }
-
 .java .navbar__menu__icon {
   display: none;
 }
@@ -95,7 +72,6 @@
     display: none;
   }
 }
-
 @media only screen and (max-width: 321px) {
   .navbar__logo h1 {
     width: 80px;
@@ -113,5 +89,4 @@
   .navbar__menu__icon {
     display: none;
   }
-}
-/*# sourceMappingURL=java.css.map */
+}/*# sourceMappingURL=java.css.map */
