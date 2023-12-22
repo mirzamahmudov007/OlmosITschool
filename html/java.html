@@ -22,10 +22,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../index.html">UY</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Bo'limlar
-                </a>
+            
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -53,8 +50,41 @@
             </a>
             <hr> 
             <ul class="mynav nav nav-pills flex-column mb-auto"> 
+                <li class="sidebar-item  nav-item mb-1"> 
+                    <a href="#" 
+                       class="sidebar-link collapsed" 
+                       data-bs-toggle="collapse"
+                       data-bs-target="#settings"
+                       aria-expanded="false"
+                       aria-controls="settings"> 
+                        <i class="fas fa-cog pe-2"></i> 
+                        <span class="topic">Java core</span> 
+                    </a> 
+                    <ul id="settings" 
+                        class="sidebar-dropdown list-unstyled collapse" 
+                        data-bs-parent="#sidebar"> 
+                        <li class="sidebar-item"> 
+                            <a href="#" class="sidebar-link"> 
+                                <i class="fas fa-sign-in-alt pe-2"></i> 
+                                <span class="topic"> Javaga kirish</span> 
+                            </a> 
+                        </li> 
+                        <li class="sidebar-item"> 
+                            <a href="#" class="sidebar-link"> 
+                                <i class="fas fa-user-plus pe-2"></i> 
+                                <span class="topic">Register</span> 
+                            </a> 
+                        </li> 
+                        <li class="sidebar-item"> 
+                            <a href="#" class="sidebar-link"> 
+                                <i class="fas fa-sign-out-alt pe-2"></i> 
+                                <span class="topic">Log Out</span> 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </li> 
                 <li class="nav-item mb-1"> 
-                    <a href="#"> 
+                    <a href="../index.html"> 
                         <i class="fa-regular fa-user"></i> 
                         Profile 
                     </a> 
@@ -138,7 +168,7 @@
                 <input type="checkbox" id="dropdown">
               
                 <label class="dropdown__face" for="dropdown">
-                  <div class="dropdown__text">Dropdown</div>
+                  <div class="dropdown__text">Mavzular</div>
               
                   <div class="dropdown__arrow"></div>
                 </label>
@@ -156,9 +186,9 @@
                             <hr> 
                             <ul class="mynav nav nav-pills flex-column mb-auto"> 
                                 <li class="nav-item mb-1"> 
-                                    <a href="#"> 
+                                    <a href="#kirish"> 
                                         <i class="fa-regular fa-user"></i> 
-                                        Profile 
+                                     Javaga kirish
                                     </a> 
                                 </li> 
                   
@@ -202,7 +232,7 @@
                                         class="sidebar-dropdown list-unstyled collapse" 
                                         data-bs-parent="#sidebar"> 
                                         <li class="sidebar-item"> 
-                                            <a href="#" class="sidebar-link"> 
+                                            <a href="#kirish" class="sidebar-link"> 
                                                 <i class="fas fa-sign-in-alt pe-2"></i> 
                                                 <span class="topic"> Login</span> 
                                             </a> 
@@ -240,35 +270,32 @@
               
         </div>
        
-        <div  class="flex-fill w-100 bg-danger"> 
+        <div  class="flex-fill w-100 "> 
             
             <div class="p-4"> 
               
                 <!-- <hr>  -->
                 <div class="row"> 
                     <div class="col mt-2"> 
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        <p>Content</p>
-                        
+                      <div class="kirish" id="kirish">
+                        <h2 class="text-center ">Java Kirish</h2>
+                        <p style="">Java 1995 yilda yaratilgan mashhur dasturlash tilidir.</p>
+                        <p  style="">
+                            U Oracle kompaniyasiga tegishli va 3 milliarddan ortiq qurilmalar hozirda Java bilan ishlaydi.</p>
+                        <h4 style="color: red; margin-top: 50px; text-align: center;">Javadan foydalanadigan yirik kompaniyalar</h4>
+                            <img style="max-width: 100%; margin-bottom:50px;" src="../img/JavaCompanies.png" alt="">    
+                      </div>
+
+                    <h4 style="color: red; text-align: center;">  Java yordamida nimalar qilish mumkin ?</h4>
+<p> Mobil ilovalar (ayniqsa Android ilovalari)</p>
+<p> Kompyuter ilovalar</p>
+<p> Veb ilovalar</p>
+<p> Veb-serverlar va dastur serverlari</p>
+<p> O'yinlar</p>
+<p> Ma'lumotlar bazasiga ulanish</p>
+<p> Telegram bot yasash</p>
+<p> v.k …</p>
+
                     </div> 
                 </div> 
             </div> 

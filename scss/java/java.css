@@ -149,34 +149,39 @@ html, body {
   z-index: 1;
 }
 
-#theme {
-  position: fixed;
-}
-
 .dropdownx {
+  position: relative;
   width: 100%;
   display: none;
+}
+
+.flex-fill p {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 767px) {
   .dropdownx {
     z-index: 100;
-    position: fixed;
     display: block;
+  }
+  .flex-fill p {
+    font-size: 14px;
+  }
+  .flex-fill h4 {
+    font-size: 18px;
   }
   .aside_content {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: #222;
   }
   .navbar {
     z-index: 1000;
   }
   .flex-fill {
     margin-left: 0px;
-    margin-top: 65px;
+    margin-top: 125px;
     z-index: 1;
   }
   #bdSidebar {
@@ -197,10 +202,12 @@ html, body {
   padding: 20px;
 }
 .dropdown__face {
+  border-bottom: 1px solid black;
   display: block;
   position: relative;
 }
 .dropdown__items {
+  overflow-y: hidden;
   margin: 0;
   position: absolute;
   right: 0;
@@ -209,6 +216,7 @@ html, body {
   list-style: none;
   list-style-type: none;
   display: block;
+  justify-content: space-between;
   visibility: hidden;
   z-index: -1;
   opacity: 0;
@@ -231,6 +239,7 @@ html, body {
   right: 30px;
   width: 10px;
   height: 10px;
+  transform: rotate(45deg) translateY(-50%);
   transform-origin: right;
 }
 .dropdown input {
